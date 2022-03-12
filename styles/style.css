@@ -42,13 +42,14 @@ h1,h2,h3,h4 {
 
 .title_2 {
   font-family: 'Dancing Script', cursive;
-  font-size: 4rem;
+  font-size: 3rem;
   color: rgb(250, 162, 177);
   margin-top: 20px;
   animation-name: title_2;
   animation-duration: 2s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
+  text-align: center;
 }
 
 .main_image {
