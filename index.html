@@ -77,45 +77,56 @@
         </details>
       </section>
 
+      <section class="komentar" id="komentar">
+        <h1>Kirimkan Pesan</h1>
+        <p>
+          Untuk Kami Berdua
+        </p>
+      </section>
+      
+      <main class="container_comments main">
+        
+        <form class="comment_form" onsubmit="handleComment(event)">
+
+        <div class="form_group">
+            <input type="text" id="name" name="name" placeholder="Nama" required>
+        </div>
+            
+        <div class="form_group">
+            <input type="phone" id="phone" name="phone" placeholder="Telepon" required>
+        </div>
+
+        <div class="form_group">
+            <textarea type="textarea" id="send" name="send" placeholder="Kirim Pesan" required></textarea>
+        </div>
+
+        <div class="form_group">
+          <select id="kehadiran">
+            <option value="Hadir">Hadir</option>
+            <option value="Akan Hadir">Akan Hadir</option>
+            <option value="Tidak Hadir">Tidak Hadir</option>
+          </select>
+        </div>
+
+        <div class="btn_group">
+            <button class="btn_submit" type="submit">Submit</button>
+        </div>
+        
+          <label class="title" for="text">Tampilan Pesan</label>
+          <div class="root" id="root"></div>
+
+        </form>
+
+        
     </main>
 
-    <i class="material-icons menu_icon" id="menu_icon" >menu</i>
-
-    <menu class="menu" id="menu">
-
-      <h1 class="title_2" style="font-size: 2rem; color: palevioletred">Rizal & Nabillah</h1>
-
-
-      <i class="material-icons close_icon" id="close_icon">close</i>
-      <a href="#akad">
-      <div class="menu_item" onclick="closeMenu()">
-        Akad
-      </div>
-      </a>
-
-      <a href="#resepsi">
-      <div class="menu_item" onclick="closeMenu()">
-        Resepsi
-      </div>
-      </a>
-
-      <a href="#map">
-        <div class="menu_item" onclick="closeMenu()">
-          Map
-        </div>
-        </a>
-
-      <a href="#konfirmasi">
-        <div class="menu_item" onclick="closeMenu()">
-          Konfirmasi Kehadiaran
-        </div>
-        </a>
-    </menu>
-    
-      <audio autoplay>
-        <source src="https://pinangan.id/wp-content/uploads/2021/10/y2meta.com-Haley-Reinhart-Cant-Help-Falling-In-Love-Official-Audio-128-kbps.mp3" type="audio/mpeg"/>
+    <div id="audio_container" class="audio-box">
+      <audio id="song" controls loop autoplay >
+        <source src="https://res.cloudinary.com/rizalnr/video/upload/v1647408382/musik/Akad_eahoms.mp3" ">
       </audio>
+    </div>
 
       <script src="/js/main.js"></script>
+      <script src="/js/comments.js"></script>
   </body>
 </html>
