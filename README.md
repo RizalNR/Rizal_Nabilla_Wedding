@@ -7,3 +7,5 @@ Project undangan online rizal dan nabilla
 - JAVASCRIPT
 - VERCEL
 - GITHUB
+
+# Release : https://rizal-nabillah-wedding.vercel.app
